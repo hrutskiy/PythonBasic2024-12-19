@@ -1,6 +1,6 @@
 num1 = float(input("Введіть перше число: "))
-operation = input("Введіть дію (+, -, *, /): ")
 num2 = float(input("Введіть друге число: "))
+operation = input("Введіть дію (+, -, *, /): ")
 if operation == "+":
     result = num1 + num2
     print("Результат:", result)
