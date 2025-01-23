@@ -1,8 +1,10 @@
+import string
+
 user_input = input("Введіть рядок: ")
-allowed_characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
-cleaned_input = ''.join(char for char in user_input if char in allowed_characters)
+cleaned_input = ''.join(char if char not in string.punctuation else ' ' for char in user_input)
 words = cleaned_input.split()
-hashtag = "#" + ''.join(word.capitalize() for word in words)
+hashtag = ''.join(word.capitalize() for word in words)
 if len(hashtag) > 140:
     hashtag = hashtag[:140]
-print("Ваш хештег:", hashtag)
+hashtag = '#' + hashtag
+print(hashtag)
