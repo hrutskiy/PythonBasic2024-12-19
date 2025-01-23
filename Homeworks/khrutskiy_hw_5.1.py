@@ -1,5 +1,6 @@
 import keyword
 import string
+
 user_input = input("Введіть ім'я змінної: ")
 is_valid = True
 if user_input in keyword.kwlist:
