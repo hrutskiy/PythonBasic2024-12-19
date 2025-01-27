@@ -1,4 +1,5 @@
 import string
+
 letters = string.ascii_letters
 user_input = input("Введіть дві літери через дефіс (наприклад, a-c): ")
 start, end = user_input.split('-')
