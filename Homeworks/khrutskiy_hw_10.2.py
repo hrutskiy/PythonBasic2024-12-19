@@ -3,8 +3,8 @@ import re
 
 def first_word(text):
     """ Пошук першого слова у рядку """
-    words = re.findall(r"[a-zA-Z']+", text)
-    return words[0] if words else ""
+    match = re.search(r"[a-zA-Z']+", text)
+    return match.group() if match else ""
 
 
 assert first_word("Hello world") == "Hello", 'Test1'
