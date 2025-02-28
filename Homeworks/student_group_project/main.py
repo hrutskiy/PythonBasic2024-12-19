@@ -1,5 +1,5 @@
 from student import Student
-from Homeworks.student_group_project.group import Group
+from group import Group
 
 st1 = Student('Male', 30, 'Steve', 'Jobs', 'AN142')
 st2 = Student('Female', 25, 'Liza', 'Taylor', 'AN145')
